@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400,500&display=swap");
+
+*{
+    font-family: "Besley",serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s all linear;
+}
+*::selection{
+    background: var(--main);
+    color: #fff;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:9rem ;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 2rem 7%;
+}
+html::-webkit-scrollbar{
+    width: 0.7rem;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
+
+
+
+
+
+
+/*global variables*/
+:root{
+    --main:red;
+    --box-shadow:0 0.5rem 1.5rem black;
+
+}
+.btn{
+    background: var(--main);
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    letter-spacing: 0.2 rem;
+
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+}
+.heading span{
+    color: var(--main);
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*navbar*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1000;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 9%;
+}
+.header .logo img {
+    height: 6rem;
+}
+.header .navbar a {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+
+
+}
+.header .navbar a:hover{
+    color:var(--main);
+}
+#menuBars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+/*nav bar end*/
+
+/*home section start*/
+.home{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("front-screen.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.home .content{
+    max-width: 60rem;
+    color: #fff;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.home .content p{
+    font-weight: lighter;
+    font-size: 2rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ccc;
+}
+
+/*home section end*/
+
+/*about start*/
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about .row .img{
+    flex: 1 1 45rem;
+    padding: 1rem;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .img img{
+    width: 100%;
+   /* border: 1rem solid var(--main);*/
+}
+.about .row .content h3{
+    font-size: 3.5rem;
+}
+.about .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+/*about end*/
+
+/*event-start*/
+.events{
+    margin-bottom: 2px;
+}
+.events .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.8rem;
+    
+    
+}
+.events .boxContainer .box{
+    background-color: #8b8487b9;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+.events .boxContainer .box img{
+    width: 34rem;
+    height: 15rem;
+    border-radius: 5%;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background: var(--main);
+}
+.events .boxContainer .box h3{
+    color: #161515;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+
+.events .boxContainer .box:hover img{
+    transform: scale(1.1);
+
+}
+
+
+/*event-end*/
+
+/* review start*/
+.review{
+    margin-bottom: 200px;
+}
+.review .box {
+    border-radius: 0.5rem;
+    background: #0e0d0de0;
+    padding: 2rem;
+    position: relative;
+}
+
+.review .box:hover{
+    transform: scale(1.04);
+}
+.review .box .fa-quote-right{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--main);
+}
+.review .box .img{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+.review .box .img h3{
+    color: #fff;
+    font-size: 2rem;
+}
+.review .box .img span{
+    font-size: 1.5rem;
+    color: #ccc;
+   
+}
+.review .box  p{
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    color: #eee;
+
+}
+
+.review .box .img img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* review end*/
+
+/*register start*/
+
+.register{
+    margin-bottom: 2px;
+}
+.register form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.register input,select {
+    width: 100%;
+    background: #8b8487b9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-transform: none;
+    color: #0c0c0c;
+    font-size: 1.5rem;
+    margin: 0.7rem 0;
+
+}
+.register label{
+    width: 100%;
+    text-align: left;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-transform: none;
+    color: #0a0a0a;
+    font-size: 1.5rem;
+    margin: 0.7rem 0;
+}
+.register form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.registration-form{
+    background: #8b8485b9; /* White background with transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+  width: 100%;
+  max-width: 400px; /* Adjust width as needed */
+}
+
+
+
+
+
+/*register end*/
+/*media query*/
+@media (max-width:991px) {
+    
+
+html{
+    font-size: 55%;
+}
+.header{
+    padding: 1.5rem 2rem;
+}
+}
+@media(max-width:768px){
+    #menuBars{
+        display: initial;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 0.2rem solid #222;
+        background-color: #000;
+        clip-path:polygon(0 0,100% 0,100% 0,0 0);
+    }
+    .header .navbar.active{
+        clip-path:polygon(0 0,100% 0, 100% 100%, 0% 100%);
+
+    }
+    .header .navbar a{
+        display: flex;
+        background:#333;
+        font-size: 2rem;
+        margin: 1.3rem;
+        padding: 1.3rem;
+        border-radius: 0.5rem;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4rem;
+
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width){
+    html{
+        font-size: 50%;
+    }
+}

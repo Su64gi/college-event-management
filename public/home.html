@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---link to style-->
+    <link rel="stylesheet" href="style.css">
+    <!--link font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    
+    <!--swipper js-->
+<link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
+
+    <title>project</title>
+</head>
+<body>
+    <!--navbar-->
+    <header class="header">
+        <a href="#"class ="logo">
+        <img src="logo.png" alt=""></a>
+        <div class="navbar">
+            <a href="#Home">home</a>
+            <a href="#About">About</a>
+            <a href="#Events">Events</a>
+            <a href="#Review">Review</a>
+            <a href="#Register">Register</a>
+        </div>
+        <div id="menuBars" class="fas fa-bars"></div>
+    </header>
+
+    <!--home-->
+    <section class="home" id="Home">
+        <div class="content">
+            <h3>From Vision To Reality-Events Reimagined</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea saepe deserunt, adipisci quasi fugiat tenetur neque, laborum aliquam sunt placeat, </p>
+            <a href="#Register" class="btn">Register Now</a>
+        </div>
+    </section>
+
+    <!--about-->
+    <section class="about"id=About>
+        <h1 class="heading"><span>About</span>Us</h1>
+
+        <div class="row">
+            <div class="img">
+                <img src="about.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>We will Give a Special Celebration For You</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta illum consequuntur, non corrupti magnam quam, mollitia ratione suscipit laudantium nobis alias facere. Natus beatae voluptate exercitationem adipisci minima velit itaque.</p>
+                <a href="#Register" class="btn">Book us</a>
+            </div>
+        </div>
+    </section>
+    <!--events-->
+    <section class="events"id="Events">
+        <h1 class="heading">Events <span>Organised</span></h1>
+        <div class="boxContainer">
+
+            <div class="box">
+                <a href="techquiz.html"><img src="techquiz.jpg" alt=""></a>
+          
+
+                <h3>Tech Quiz</h3>
+               
+            </div>
+
+            <div class="box">
+                
+                <a href="project-expo.html"><img src="project-expo.jpg" alt=""></a>
+                <h3>Project Expo</h3>
+                
+            </div>
+
+            <div class="box">
+                <a href="hackathons.html"><img src="hackathon.jpg" alt=""></a>
+                
+                <h3>Hackathons</h3>
+                
+            </div>
+
+            <div class="box">
+                <a href="cultural.html"><img src="cultural.jpg" alt=""></a>
+                
+                <h3>Cultural</h3>
+               
+            </div>
+
+            <div class="box">
+                <a href="debate.html"><img src="debate.jpg" alt=""></a>
+                
+                <h3>Debate</h3>
+                
+            </div>
+
+            <div class="box">
+                <a href="talent.html"><img src="talent.jpg" alt=""></a>
+                
+                <h3>Talent Show</h3>
+                
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <!---review-->
+    <section class="review"id="Review">
+        <h1 class="heading">Review <span>Section</span></h1>
+
+        <div class="ReviewSlide swiper-container">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="img">
+
+                    <img src="p1.jpg" alt="">
+
+                    <div class="imgInfo">
+                        <h3>Thomas</h3>
+                        <span>Thomas1243@gmail.com</span>
+                        
+                    </div>
+                </div>
+                <p>Engaging in the debate was an intellectually invigorating experience, honing my reasoning, articulation, and quick decision-making skills</p>
+              </div>
+
+              <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="img">
+
+                    <img src="p2.jpg" alt="">
+
+                    <div class="imgInfo">
+                        <h3>Elsa</h3>
+                        <span>Elsa7860@gmail.com</span>
+                    </div>
+                </div>
+                <p>Participating in the project expo was an enriching experience, offering a unique platform to showcase innovation </p>
+              </div>
+
+              <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="img">
+
+                    <img src="p3.jpg" alt="">
+
+                    <div class="imgInfo">
+                        <h3>Messi</h3>
+                        <span>messi590@gmail.com</span>
+                    </div>
+                </div>
+                <p>An exhilarating experience of innovation and teamwork, where creative problem-solving meets real-world challenges in a fast-paced environment</p>
+              </div>
+
+              <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="img">
+
+                    <img src="p4.jpg" alt="">
+
+                    <div class="imgInfo">
+                        <h3>kate</h3>
+                        <span>kate4040@gmail.com</span>
+                    </div>
+                </div>
+                <p>Taking part in the college talent show was a fun and unforgettable opportunity to express my talents and connect with fellow students</p>
+              </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--registration-->
+    <section class="register" id="Register">
+        <h1 class="heading"><span>Register</span>Us</h1>
+        
+        <form action="/sign_up" method="post" class="registration-form">
+        
+            <div class="inputBox">
+                <label for="text">Name</label>
+            <input type="text" id="name" name="name" placeholder=" Name.." required>
+        
+           
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+        
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number.." required>
+        
+            <label for="contest">Event
+            
+            <select class="contest" name="contest" required>
+                <option>Tech Quiz</option>
+                <option>Project Expo</option>
+                <option>Hackathons</option>
+                <option>Culturals</option>
+                <option>Debate</option>
+                <option>Talent show</option>
+            </select></label>
+        </div>
+            <input type="submit" value="Register" class="btn">
+        </form>
+         
+        
+            </section>
+
+
+<!--swipper js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+    <!--link js-->
+<script src="event.js"></script>
+</body>
+
+</html>
